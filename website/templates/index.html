@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your separate CSS file -->
+    <link rel="stylesheet" href="{{url_for('static', filename='home.css')}}"> <!-- Link to your separate CSS file -->
 </head>
 <body>
     <div class="container">
-        <img src="https://raw.githubusercontent.com/The-Infamaous-Spoon/kimosabe/master/website/assets/Capture1.PNG" alt="Logo" class="logo">
+        <img src="https://raw.githubusercontent.com/The-Infamaous-Spoon/kimosabe/master/website/assets/kimosabe_logo.png" alt="Logo" class="logo">
         <h1>Welcome to our Landing Page</h1>
         <p>Discover amazing things with us.</p>
-        <form action="#" method="post">
-            <input type="text" name="name" placeholder="Your Name">
-            <input type="password" name="password" placeholder="Password">
-            <button type="submit">Submit</button>
+        <form action="#" method="POST">
+            <input type="text" name="email_input" placeholder="Email">
+            <input type="submit" value="Submit" id="email">
         </form>
     </div>
 </body>
