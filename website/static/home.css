@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-image: url('path/to/your/image.jpg'); /* Replace with the actual path to your image */
+    background-image: url('https://raw.githubusercontent.com/The-Infamaous-Spoon/kimosabe/master/website/assets/Untitled%20design%20(5).png'); /* Replace with the actual path to your image */
     background-size: cover; /* Adjust the background size as needed */
     background-repeat: no-repeat;
     background-attachment: fixed; /* Keeps the background fixed while scrolling */
@@ -15,21 +15,21 @@ body {
     min-height: 100vh;
 }
 
-.logo {
-    margin: 0;
+img {
+    margin-left: 80px;
     width: 400px; /* Adjust the width as needed */
 }
 
 h1 {
     color: white;
-    font-family: Roboto;
-    font-size: 1.2em;
+    font-family: Montserrat;
+    font-size: 1.5em;
     margin: 20px 0;
 }
 
 p {
     color: white;
-    font-family: Roboto;
+    font-family: Montserrat;
     font-size: 1.2em;
     margin: 20px 0;
 }
