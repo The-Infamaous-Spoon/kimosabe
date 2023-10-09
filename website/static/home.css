@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-image: url('https://raw.githubusercontent.com/The-Infamaous-Spoon/kimosabe/master/website/assets/Untitled%20design%20(5).png'); /* Replace with the actual path to your image */
+    background-color: #E68B58;
     background-size: cover; /* Adjust the background size as needed */
     background-repeat: no-repeat;
     background-attachment: fixed; /* Keeps the background fixed while scrolling */
@@ -17,7 +17,7 @@ body {
 
 img {
     margin-left: 80px;
-    width: 400px; /* Adjust the width as needed */
+    width: 500px; /* Adjust the width as needed */
 }
 
 h1 {
@@ -40,10 +40,10 @@ form {
 
 input[type="text"] {
     width: 300px;
-    margin: 10px 0;
-    padding: 10px;
+    margin: 0px;
+    padding: 5px;
     border: none;
-    border-radius: 10px;
+    border-radius: 0px;
     font-family: Shanti;
     font-size: 1.3em;
     text-align: center;
@@ -52,9 +52,9 @@ input[type="text"] {
 input[type="submit"] {
     width: 150px;
     margin-top: 10px;
-    padding: 10px;
+    padding: 5px;
     border: none;
-    border-radius: 10px;
+    border-radius: 0px;
     font-family: Shanti;
     font-size: 1.3em;
     text-align: center;

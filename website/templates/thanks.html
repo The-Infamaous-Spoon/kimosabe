@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDR-Style Arrow Animation</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='thanks.css')}}">
+</head>
+<body>
+    <div class="container">
+        <img src="https://raw.githubusercontent.com/The-Infamaous-Spoon/kimosabe/master/website/assets/kimosabe_logo.png" alt="Logo" class="logo">
+        <h1>Revolutionize CAD Modeling with Real-Time, Natural Language Generation</h1>
+        <div class="counter">0.00000000</div>
+           <div class="arrow-container">
+            </div>
+    </div>
+    <button id="moveArrowButton">Move Arrow</button>
+    <div class="arrow-container">
+    </div>
+
+    <script>
+        const moveArrowButton = document.getElementById('moveArrowButton');
+        const arrowContainer = document.querySelector('.arrow-container');
+        const counterElement = document.querySelector('.counter');
+
+        let counter = 0;
+
+        moveArrowButton.addEventListener('click', () => {
+            // Create a new arrow element
+            counter += 0.00000001;
+            counterElement.textContent = counter.toFixed(8);
+            const arrow = document.createElement('div');
+            arrow.classList.add('arrow');
+            arrow.style.opacity = '1';
+
+            // Position the arrow element randomly within the container
+            arrow.style.left = `${Math.random() * window.innerWidth}px`; // Random horizontal position
+            arrow.style.top = `${Math.random() * window.innerHeight}px`;
+
+            // Append the arrow element to the container
+            arrowContainer.appendChild(arrow);
+
+            setTimeout(() => {
+                // Apply the animation class and change opacity
+                arrow.classList.add('move-up-and-fade');
+            }, 10); // Adjust the delay as needed
+
+            // After the animation completes, remove the arrow element
+            setTimeout(() => {
+                arrowContainer.removeChild(arrow);
+            }, 1000); // Adjust the duration of the animation in milliseconds
+        });
+    </script>
+</body>
+</html>

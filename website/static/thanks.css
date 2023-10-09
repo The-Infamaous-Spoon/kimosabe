@@ -1,0 +1,68 @@
+body {
+    text-align: center;
+    background-image: url('https://raw.githubusercontent.com/The-Infamaous-Spoon/kimosabe/master/website/assets/Untitled%20design%20(5).png'); /* Replace with the actual path to your image */
+    background-size: cover; /* Adjust the background size as needed */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+img {
+    margin-left: 80px;
+    width: 500px; /* Adjust the width as needed */
+}
+
+h1 {
+    color: white;
+    font-family: Montserrat;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.arrow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+}
+.counter {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px; /* Adjust the font size */
+    font-weight: bold;
+    color: white; /* Text color */
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.arrow {
+    width: 10px; /* Adjust the arrow's width as needed */
+    height: 30px; /* Adjust the arrow's height as needed */
+    border: 2px solid #29ABE2; /* Example solid border with a black color */
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #E22929, #A516E8); /* Gradient background */
+    position: absolute;
+    opacity: 1; /* Initial opacity */
+}
+
+.move-up-and-fade {
+    animation: move-up-and-fade 1s ease-in-out;
+}
+
+@keyframes move-up-and-fade {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
