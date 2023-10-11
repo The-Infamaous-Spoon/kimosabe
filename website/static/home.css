@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: #E68B58;
+    background-color: #9CFFE1;
     background-size: cover; /* Adjust the background size as needed */
     background-repeat: no-repeat;
     background-attachment: fixed; /* Keeps the background fixed while scrolling */
@@ -17,18 +17,18 @@ body {
 
 img {
     margin-left: 80px;
-    width: 500px; /* Adjust the width as needed */
+    width: 700px; /* Adjust the width as needed */
 }
 
 h1 {
-    color: white;
+    color: black;
     font-family: Montserrat;
-    font-size: 1.5em;
+    font-size: 2.5em;
     margin: 20px 0;
 }
 
 p {
-    color: white;
+    color: black;
     font-family: Montserrat;
     font-size: 1.2em;
     margin: 20px 0;
@@ -58,7 +58,7 @@ input[type="submit"] {
     font-family: Shanti;
     font-size: 1.3em;
     text-align: center;
-    background-color: #007BFF;
+    background-color: #000000;
     color: white;
     cursor: pointer;
 }

@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-image: url('https://raw.githubusercontent.com/The-Infamaous-Spoon/kimosabe/master/website/assets/Untitled%20design%20(5).png'); /* Replace with the actual path to your image */
+    background-color: #9CFFE1;
     background-size: cover; /* Adjust the background size as needed */
     background-repeat: no-repeat;
     background-attachment: fixed; /* Keeps the background fixed while scrolling */
